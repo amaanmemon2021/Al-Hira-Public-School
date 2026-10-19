@@ -1,7 +1,7 @@
 # Decap CMS: edits are saved as Git commits to content.json; Netlify then redeploys.
 backend:
   name: github
-  repo: https://github.com/amaanmemon2021/Al-Hira-Public-School   # <-- change this
+  repo: amaanmemon2021/Al-Hira-Public-School   # <-- change this
   branch: main       # lets you test with `npx decap-server`; remove for production
 media_folder: uploads
 public_folder: /uploads
