@@ -57,6 +57,13 @@ collections:
               - {name: cat, label: Category, widget: select, options: [Campus, Classrooms, Events, Sports, Competitions, Achievements, Trips]}
               - {name: alt, label: Description, widget: string}
               - {name: src, label: Photo, widget: image}
+                      - name: facilityImages
+            label: Facility photos
+            widget: list
+            required: false
+            fields:
+              - {name: facility, label: Facility, widget: select, options: ["Smart classrooms","Library & reading","Sports & physical activity","CCTV & campus safety","Activity-based learning","Events & educational trips"]}
+              - {name: photo, label: Photo, widget: image}
           - name: downloads
             label: Downloads & mandatory information
             widget: list
