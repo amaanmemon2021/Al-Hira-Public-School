@@ -1,0 +1,67 @@
+# Decap CMS: edits are saved as Git commits to content.json; Netlify then redeploys.
+backend:
+  name: github
+  repo: https://github.com/amaanmemon2021/Al-Hira-Public-School   # <-- change this
+  branch: main       # lets you test with `npx decap-server`; remove for production
+media_folder: uploads
+public_folder: /uploads
+site_url: https://alhirapublicschool.netlify.app
+display_url: https://alhirapublicschool.netlify.app
+collections:
+  - name: site
+    label: School Website
+    files:
+      - name: content
+        label: Site content
+        file: content.json
+        fields:
+          - {name: session, label: Admission session, widget: string, required: false}
+          - {name: admissionsOpen, label: Admissions open, widget: boolean, default: true}
+          - {name: announcement, label: Homepage announcement, widget: string, required: false}
+          - {name: classesOffered, label: Classes offered (e.g. Nursery to Class 8), widget: string, required: false}
+          - {name: officeHours, label: Office hours, widget: string, required: false}
+          - {name: aboutImage, label: About photo, widget: image, required: false}
+          - name: notices
+            label: Notices & news
+            widget: list
+            required: false
+            fields:
+              - {name: title, label: Title, widget: string}
+              - {name: date, label: Date, widget: datetime, time_format: false, date_format: "YYYY-MM-DD", format: "YYYY-MM-DD"}
+              - {name: cat, label: Category, widget: select, options: [Admissions, Exams, Holidays, Events, Results, Parent notice]}
+              - {name: summary, label: Short description, widget: text}
+              - {name: body, label: Full content, widget: text, required: false}
+              - {name: file, label: Attachment, widget: file, required: false}
+          - name: achievements
+            label: Student achievements (consent required)
+            widget: list
+            required: false
+            fields:
+              - {name: name, label: Student name, widget: string}
+              - {name: class, label: Class, widget: string}
+              - {name: achievement, label: Achievement, widget: string}
+              - {name: year, label: Year, widget: string}
+              - {name: photo, label: Photo, widget: image, required: false}
+          - name: testimonials
+            label: Parent testimonials (genuine only)
+            widget: list
+            required: false
+            fields:
+              - {name: quote, label: Quote, widget: text}
+              - {name: name, label: Parent name, widget: string}
+          - name: gallery
+            label: Gallery photos
+            widget: list
+            required: false
+            fields:
+              - {name: cat, label: Category, widget: select, options: [Campus, Classrooms, Events, Sports, Competitions, Achievements, Trips]}
+              - {name: alt, label: Description, widget: string}
+              - {name: src, label: Photo, widget: image}
+          - name: downloads
+            label: Downloads & mandatory information
+            widget: list
+            required: false
+            fields:
+              - {name: category, label: Section, widget: select, options: ["Recognition & affiliation","Mandatory disclosures","Fee structure","Academic calendar","Holiday list","Examination schedules","Books & syllabus","Policies & forms"]}
+              - {name: title, label: Title, widget: string}
+              - {name: url, label: File, widget: file}
