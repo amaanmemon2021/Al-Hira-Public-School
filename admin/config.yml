@@ -57,7 +57,7 @@ collections:
               - {name: cat, label: Category, widget: select, options: [Campus, Classrooms, Events, Sports, Competitions, Achievements, Trips]}
               - {name: alt, label: Description, widget: string}
               - {name: src, label: Photo, widget: image}
-                      - name: facilityImages
+          - name: facilityImages
             label: Facility photos
             widget: list
             required: false
