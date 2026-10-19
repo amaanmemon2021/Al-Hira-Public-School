@@ -44,5 +44,27 @@
       "summary": "Al-Hira Public School has started a Rifle Shooting Academy.",
       "file": "/uploads/untitled-1.png"
     }
+  ],
+  "facilityImages": [
+    {
+      "facility": "Smart classrooms",
+      "photo": "/uploads/20260515_165636.jpg"
+    },
+    {
+      "facility": "Library & reading",
+      "photo": "/uploads/img-20260214-wa0046.jpg"
+    },
+    {
+      "facility": "Sports & physical activity",
+      "photo": "/uploads/2w4a1909.jpg"
+    },
+    {
+      "facility": "CCTV & campus safety",
+      "photo": "/uploads/20260515_165413.jpg"
+    },
+    {
+      "facility": "Events & educational trips",
+      "photo": "/uploads/img-20260515-wa0009.jpg"
+    }
   ]
 }
