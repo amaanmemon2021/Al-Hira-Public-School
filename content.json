@@ -1,1 +1,24 @@
-{"session":"2026–27","admissionsOpen":true,"announcement":"","classesOffered":"","officeHours":"","notices":[],"achievements":[],"testimonials":[],"gallery":[],"downloads":[]}
+{
+  "achievements": [],
+  "announcement": "",
+  "downloads": [
+    {
+      "category": "Holiday list",
+      "title": "Dushera Holiday",
+      "url": "/uploads/phmplete-new.png"
+    }
+  ],
+  "gallery": [
+    {
+      "cat": "Events",
+      "src": "/uploads/2w4a1603.jpg",
+      "alt": "Doctor Felicitation"
+    }
+  ],
+  "officeHours": "",
+  "admissionsOpen": true,
+  "testimonials": [],
+  "classesOffered": "",
+  "session": "2026–27",
+  "notices": []
+}
