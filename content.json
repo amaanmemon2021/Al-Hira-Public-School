@@ -13,12 +13,35 @@
       "cat": "Events",
       "src": "/uploads/2w4a1603.jpg",
       "alt": "Doctor Felicitation"
+    },
+    {
+      "cat": "Classrooms",
+      "alt": "Well Equipped Classrooms",
+      "src": "/uploads/20260515_165636.jpg"
+    },
+    {
+      "cat": "Sports",
+      "alt": "Rifle Shooting",
+      "src": "/uploads/focused-shooter-at-indoor-range.png"
+    },
+    {
+      "cat": "Campus",
+      "alt": "Our Campus",
+      "src": "/uploads/chatgpt-image-jun-25-2026-01_08_40-pm.png"
     }
   ],
-  "officeHours": "",
+  "officeHours": "10:00 AM to 05:00 PM",
   "admissionsOpen": true,
   "testimonials": [],
-  "classesOffered": "",
+  "classesOffered": "Class Nursery to 8th",
   "session": "2026–27",
-  "notices": []
+  "notices": [
+    {
+      "title": "Rifle Shooting Academy",
+      "date": "2026-10-19",
+      "cat": "Events",
+      "summary": "Al-Hira Public School has started a Rifle Shooting Academy.",
+      "file": "/uploads/untitled-1.png"
+    }
+  ]
 }
